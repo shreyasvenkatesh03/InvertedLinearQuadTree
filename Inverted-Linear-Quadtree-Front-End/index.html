@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inverted Linear Quadtree</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width">
+	<!--<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>-->
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<script src="js/jquery.js"></script>
+	<script>
+		//Choose if you want the window width to display - 1 = yes, 0 = no
+		var showWidth = 1;
+
+		if(showWidth == 1){
+        	$(document).ready(function (){
+            	$(window).resize(function(){
+                	var width = $(window).width();
+                	document.getElementById("output_width").innerHTML='Window Width:'+width.toString();
+           		});
+        	});
+		}
+    </script>
+</head>
+<body>
+ <div id="output_width"></div><!--Widow width inserted here-->
+	<div id="container">
+	<header class="main-header">
+		<img id="logo" src="images/logo.jpg" alt="ILQ Design" />
+		<nav class="main-nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="admin.html">Administrator</a></li>
+				<li><a href="user.html">User</a></li>
+				<li><a href="business.html">Business</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</nav><!--./main-nav-->
+	</header><!--./main-header-->
+	<div id="main">
+		<div id="content">
+			<article class="art1">
+				<header class="art-header">
+					<h2 class="title"><a href="#">Spatial Keyword Search</a></h2>
+				</header><!--./art-header-->
+					<p>
+						Spatial keyword Search is a growing industry for web development.
+					</p><a class="readmore" href="#">Read more</a>
+			</article><!--./art1-->
+			<article class="art1">
+				<header class="art-header">
+					<h2 class="title"><a href="#">Top K Spatial Keyword Search</a></h2>
+				</header><!--./art-header-->
+					<p>
+						Top K Spatial Keyword Search
+					</p>
+					<a class="readmore" href="#">Read more</a>
+				</article><!--./art1-->
+				<article class="art1">
+					<header class="art-header">
+						<h2 class="title"><a href="#">B-Top K Spatial Keyword Search</a></h2>
+					</header><!--./art-header-->
+						<p>
+							B-Top K Spatial Keyword Search
+						</p>
+						<a class="readmore" href="#">Read more</a>
+					</article><!--./art1-->
+		</div><!--./content-->
+		<aside id="sidebar">
+			<div class="block">
+				<h2>Top Sidebar</h2>
+				<p>
+					Random
+				</p>
+			</div><!--./side1-->
+			<div class="block">
+				<h2>Mid Sidebar</h2>
+				<p>
+					Random 2
+				</p>
+			</div><!--./side2-->
+			<div class="block">
+				<h2>Bottom Sidebar</h2>
+				<p>
+					Random 3
+				</p>
+			</div><!--./side3-->
+		</aside>
+	</div><!--./main-->
+	<div class="clr"></div>
+	<footer>
+		<p>Copyright &copy; 2017 - ILQ</p>
+	</footer>
+	</div><!--./container-->
+</body>
+</html>
